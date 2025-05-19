@@ -178,7 +178,7 @@ with col1_hero:
     """, unsafe_allow_html=True)
 
     # Using st.button for functionality with secondary style
-    if st.button("Learn More About Water Quality", key="learn_more_button", type="secondary"):
+    if st.button("Learn More About Our AI Models", key="learn_more_button", type="secondary"):
         st.switch_page("pages/about.py")
 
 

@@ -261,7 +261,7 @@ with st.sidebar:
     st.markdown("<p style='color: #1976D2;'> Our water quality analysis tool helps you determine if your water is safe to drink based on various chemical and physical parameters.</p>", unsafe_allow_html=True)
 
     st.markdown("<h3 style='color: #1976D2;'> Contact </h3>", unsafe_allow_html=True)
-    st.markdown("<p style='color: #1976D2;'>For more information, contact us at: water@example.com </p>", unsafe_allow_html=True)
+    st.markdown("<p style='color: #1976D2;'>For more information, contact us at: safesip@gmail.com </p>", unsafe_allow_html=True)
 
 if 'step' not in st.session_state:
     st.session_state.step = 1
