@@ -280,14 +280,14 @@ if 'water_params' not in st.session_state:
 # Parameter ranges and descriptions
 param_info = {
     'ph': {'min': 1.0, 'max': 14.0, 'desc': 'Measures how acidic/basic the water is. Ideal range is 6.5-8.5.', 'step': 0.1, 'default': 7.0},
-    'Hardness': {'min': 30.0, 'max': 300.0, 'desc': 'Amount of dissolved calcium and magnesium in mg/L.', 'step': 1.0, 'default': 150.0},
-    'Solids': {'min': 100.0, 'max': 60000.0, 'desc': 'Total dissolved solids (TDS) in ppm.', 'step': 100.0, 'default': 20000.0},
-    'Chloramines': {'min': 0.1, 'max': 13.0, 'desc': 'Disinfectants used in water treatment in mg/L.', 'step': 0.1, 'default': 7.0},
-    'Sulfate': {'min': 100.0, 'max': 500.0, 'desc': 'Naturally occurring mineral in mg/L.', 'step': 1.0, 'default': 300.0},
-    'Conductivity': {'min': 100.0, 'max': 800.0, 'desc': 'Ability of water to conduct electricity in μS/cm.', 'step': 1.0, 'default': 400.0},
-    'Organic_carbon': {'min': 2.0, 'max': 30.0, 'desc': 'Amount of carbon bound in organic compounds in mg/L.', 'step': 0.1, 'default': 15.0},
-    'Trihalomethanes': {'min': 0.5, 'max': 150.0, 'desc': 'Byproducts of water disinfection in μg/L.', 'step': 0.5, 'default': 60.0},
-    'Turbidity': {'min': 1.0, 'max': 7.0, 'desc': 'Cloudiness of water caused by suspended particles in NTU.', 'step': 0.1, 'default': 4.0}
+    'Hardness': {'min': 30.0, 'max': 300.0, 'desc': 'Amount of dissolved calcium and magnesium in mg/L. Ideal range is 60-180 mg/L (moderately hard to hard).', 'step': 1.0, 'default': 150.0},
+    'Solids': {'min': 100.0, 'max': 60000.0, 'desc': 'Total dissolved solids (TDS) in ppm. Ideal range is 50-150 ppm (for good taste and mineral balance).', 'step': 100.0, 'default': 20000.0},
+    'Chloramines': {'min': 0.1, 'max': 13.0, 'desc': 'Disinfectants used in water treatment in mg/L. Ideal range is 0.5-4 mg/L.', 'step': 0.1, 'default': 7.0},
+    'Sulfate': {'min': 100.0, 'max': 500.0, 'desc': 'Naturally occurring mineral in mg/L. Ideal range is less than 250 mg/L (with a maximum of 500 mg/L for aesthetic reasons).', 'step': 1.0, 'default': 300.0},
+    'Conductivity': {'min': 100.0, 'max': 800.0, 'desc': 'Ability of water to conduct electricity in μS/cm. Ideal range is 50-500 μS/cm.', 'step': 1.0, 'default': 400.0},
+    'Organic_carbon': {'min': 2.0, 'max': 30.0, 'desc': 'Amount of carbon bound in organic compounds in mg/L. Ideal range is less than 2 mg/L for treated water and less than 4 mg/L for source water.', 'step': 0.1, 'default': 15.0},
+    'Trihalomethanes': {'min': 0.5, 'max': 150.0, 'desc': 'Byproducts of water disinfection in μg/L. Ideal range is less than 80 μg/L (US EPA MCL) or less than 100 μg/L (EU directive).', 'step': 0.5, 'default': 60.0},
+    'Turbidity': {'min': 1.0, 'max': 7.0, 'desc': 'Cloudiness of water caused by suspended particles in NTU. Ideal range is 1.0-5.0 NTU.', 'step': 0.1, 'default': 4.0}
 }
 
 for param_key in EXPECTED_FEATURE_ORDER:
