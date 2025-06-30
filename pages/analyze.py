@@ -281,7 +281,7 @@ if 'water_params' not in st.session_state:
 param_info = {
     'ph': {'min': 1.0, 'max': 14.0, 'desc': 'Measures how acidic/basic the water is. Ideal range is 6.5-8.5.', 'step': 0.1, 'default': 7.0},
     'Hardness': {'min': 30.0, 'max': 300.0, 'desc': 'Amount of dissolved calcium and magnesium in mg/L. Ideal range is 60-180 mg/L (moderately hard to hard).', 'step': 1.0, 'default': 150.0},
-    'Solids': {'min': 100.0, 'max': 60000.0, 'desc': 'Total dissolved solids (TDS) in ppm. teste', 'step': 100.0, 'default': 2000.0},
+    'Solids': {'min': 100.0, 'max': 60000.0, 'desc': 'Total dissolved solids (TDS) in ppm.', 'step': 100.0, 'default': 2000.0},
     'Chloramines': {'min': 0.1, 'max': 13.0, 'desc': 'Disinfectants used in water treatment in mg/L. Ideal range is 0.5-4 mg/L.', 'step': 0.1, 'default': 7.0},
     'Sulfate': {'min': 100.0, 'max': 500.0, 'desc': 'Naturally occurring mineral in mg/L. Ideal range is less than 250 mg/L (with a maximum of 500 mg/L for aesthetic reasons).', 'step': 1.0, 'default': 300.0},
     'Conductivity': {'min': 100.0, 'max': 800.0, 'desc': 'Ability of water to conduct electricity in μS/cm. Ideal range is 50-500 μS/cm.', 'step': 1.0, 'default': 400.0},
